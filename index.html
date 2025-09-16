@@ -4,8 +4,326 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - WorkStation</title>
+    <meta name="author" content="TemuCoders">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html"><img src="./img/AgeCare LG.png" class="logo" alt="Logo"></a>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#how-it-works"><span class="es" style="display:none;">¿Cómo funciona?</span><span class="en" style="color: whitesmoke;">How it works?</span></a></li>
+            <li><a href="#questions">FAQ</a></li>
+            <li><a class="ctn" href="#contact">Contact</a></li>
+        </ul>
+        <img src="./img/menu-bar.png" class="menu-btn" alt="">
+
+        <div class="swicth">
+            <span class="en">English</span>
+            <input type="checkbox" class="check"> 
+            <span class="es" style="color: #1b3a5c;">Spanish</span>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Caring with Heart</h2>
+            <div class="line"></div>
+            <h1>CARE WITH AGECARE</h1>
+            <a href="https://agecare-7630e.web.app/home" class="ctn">Explore More</a>
+        </div>
+    </header>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="title">
+            <h2>ABOUT US</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="row">
+            <div class="about-col">
+                <h3>Who are we?</h3>
+                <p>We are AgeCare, and we focus on the emotional and physical well-being of the elderly, providing tools to monitor their health and facilitate communication with their loved ones.</p>
+            </div>
+            <div class="about-col">
+                <h3>Vision</h3>
+                <p>AgeCare aspires to be the leading platform in elderly care, fostering deeper connections and offering innovative solutions for holistic well-being.</p>
+            </div>
+            <div class="about-col">
+                <h3>Mission</h3>
+                <p>To empower older adults and their families through advanced digital tools that improve communication, health monitoring, and quality of life.</p>
+            </div>            
+        </div>
+    </section>
     
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2>OUR SERVICES</h2>
+        <div class="line"></div>
+        
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3>Schedule Appointments</h3>
+                    <p>We make it easy to schedule medical appointments and recreational activities for residents.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-bar"></i>
+                    </div>
+                    <h3>Statistics</h3>
+                    <p>We provide detailed statistics on the health and well-being of the residents.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-regular fa-address-book"></i>
+                    </div>
+                    <h3>Reports</h3>
+                    <p>We generate periodic reports on the health and well-being of the residents.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <h3>Messaging</h3>
+                    <p>We facilitate communication between residents and their families through our platform.</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="title">
+            <h2 class="es" style="display:none;">¿QUÉ OFRECE AGECARE?</h2>
+            <h2 class="en">WHAT DOES AGACARE OFFER?</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-content">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <h3 class="es" style="display:none;"> Gestion del cuidado de residentes </h3>
+                    <h3 class="en">Resident Care Management</h3>
+                    <p class="es" style="display:none;">Gestiona el cuidado de los residentes con eficiencia. Registra información médica, actualiza tratamientos y monitorea su bienestar en tiempo real.</p>
+                    <p class="en">Manage resident care efficiently. Record medical information, update treatments, and monitor well-being in real time.</p>
+                </div>
+                <div class="step-image">
+                    <img src="img/resident.png" alt="Secure payment illustration" loading="lazy">
+                </div>
+            </div>
+
+            <div class="step-connector"></div>
+
+            <div class="step-card">
+                <div class="step-content">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <h3 class="es" style="display:none;">Appointment Management</h3>
+                    <h3 class="en">Gestion de citas</h3>
+                    <p class="es" style="display:none;">Agenda citas como familiar, cuidador o personal médico. Gestiona horarios, recordatorios y confirmaciones en un solo lugar.</p>
+                    <p class="en">Book appointments as a family member, caregiver, or medical staff. Manage schedules, reminders, and confirmations in one place.</p>
+                </div>
+                <div class="step-image">
+                    <img src="img/appointment.png" alt="Secure payment illustration" loading="lazy">
+                </div>
+            </div>
+
+            <div class="step-connector"></div>
+
+            <div class="step-card">
+                <div class="step-content">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="es" style="display:none;">Gestión de Usuarios</h3>
+                    <h3 class="en">User Management</h3>
+                    <p class="es" style="display:none;">Gestiona doctores, cuidadores, enfermeras y más. Asigna roles y mantén el control del personal de atención.</p>
+                    <p class="en">Manage doctors, caregivers, nurses, and more. Assign roles and keep control over your care staff.</p>
+                </div>
+                <div class="step-image">
+                    <img src="img/doctor.png" alt="Secure payment illustration" loading="lazy">
+                </div>
+            </div>
+
+
+            <div class="step-connector"></div>
+
+            <div class="step-card">
+                <div class="step-content">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="es" style="display:none;">Notificaciones y Alertas</h3>
+                    <h3 class="en">Notifications and Alerts</h3>
+                    <p class="es" style="display:none;">Recibe notificaciones sobre la salud y bienestar de tu ser querido. Mantente informado en todo momento.</p>
+                    <p class="en">Receive notifications about your loved one's health and well-being. Stay informed at all times.</p>
+                </div>
+                <div class="step-image">
+                    <img src="img/notification10.png" alt="Secure payment illustration" loading="lazy">
+                </div>
+            </div>
+
+            <div class="step-connector"></div>
+
+            <div class="step-card">
+                <div class="step-content">
+                    <div class="step-icon">
+                        <i class="fa-solid fa-hands-helping"></i>
+                    </div>
+                    <h3 class="es" style="display:none;">Pagos seguros</h3>
+                    <h3 class="en">Secure payment </h3>
+                    <p class="es" style="display:none;">Realiza pagos de forma segura y visualiza el historial de transacciones. Gestiona tus aportes según tu rol de familiar.</p>
+                    <p class="en">Make secure payments and view your transaction history. Manage your contributions according to your family member role.</p>
+                </div>
+                <div class="step-image">
+                    <img src="img/payment2.png" alt="Secure payment illustration" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions -->
+    <section id="questions" class="accordion_section">
+        <div class="title">
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="wrapper">
+            <div class="grid">
+                <div class="col">
+                    <img src="./img/mensajeria.png" alt="AgeCare Logo">
+                </div>
+                <div class="col">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">What is AgeCare?</button>
+                            <div class="accordion-content">
+                                <p>It is a digital platform to monitor the health and well-being of elderly people in nursing homes, facilitating connection with their families.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">How do I access my relative’s reports?</button>
+                            <div class="accordion-content">
+                                <p>By logging into your account on our web platform or mobile app, you can access all reports in real-time.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">Is information in AgeCare secure?</button>
+                            <div class="accordion-content">
+                                <p>Yes, we use security protocols and encryption to protect all personal and medical data of the residents.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="content">
+            <h2>CONTACT US</h2>
+            <div class="line"></div>
+            <p>We are here for you! At AgeCare, we value connection and support. If you have questions, need help, or simply want to learn more about our services, don't hesitate to contact us.</p>
+        </div>
+
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"> <i class="fa-solid fa-envelope"></i> </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>agecare@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"> <i class="fa-solid fa-phone"></i> </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+51 970 526 672</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactForm">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="" required="required"></textarea>
+                        <span>Write your message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #1c1c1c; color: white; padding: 22px 10px; text-align: center;">
+        <div class="footer-content">
+            <p>Empowering elderly care through technology and real-time family connections.</p>
+            <p>Email: agecare@gmail.com | Phone: +51 970 526 672</p>
+            <p>&copy; 2025 AgeCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="./js/java.js"></script>
+    <script>
+    // Establecer inglés como idioma por defecto al cargar la página
+    window.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('.en').forEach(el => {
+            el.style.display = 'inline-block';
+        });
+        document.querySelectorAll('.es').forEach(el => {
+            el.style.display = 'none';
+        });
+    });
+
+    document.querySelector(".check").addEventListener("change", function() {
+        const isSpanish = this.checked;
+        const elementsES = document.querySelectorAll(".es");
+        const elementsEN = document.querySelectorAll(".en");
+
+        elementsES.forEach(element => {
+            element.style.display = isSpanish ? "inline-block" : "none";
+        });
+
+        elementsEN.forEach(element => {
+            element.style.display = isSpanish ? "none" : "inline-block";
+        });
+    });
+    </script>
 </body>
 </html>
