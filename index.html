@@ -21,7 +21,7 @@
             <li><a href="#questions" id="nav-faq">FAQ</a></li>
             <li><a class="ctn" href="#contact" id="nav-contact">Contact</a></li>
         </ul>
-        <img src="./img/menu-bar.png" class="menu-btn" alt="">
+        <img src="./imgs/logo.jpg" class="menu-btn" alt="Logo">
 
         <div class="swicth">
             <span class="en">English</span>
@@ -202,31 +202,7 @@
         </div>
     </footer>
 
-    <script src="./js/java.js"></script>
-    <script>
-    // Establecer inglés como idioma por defecto al cargar la página
-    window.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('.en').forEach(el => {
-            el.style.display = 'inline-block';
-        });
-        document.querySelectorAll('.es').forEach(el => {
-            el.style.display = 'none';
-        });
-    });
-
-    document.querySelector(".check").addEventListener("change", function() {
-        const isSpanish = this.checked;
-        const elementsES = document.querySelectorAll(".es");
-        const elementsEN = document.querySelectorAll(".en");
-
-        elementsES.forEach(element => {
-            element.style.display = isSpanish ? "inline-block" : "none";
-        });
-
-        elementsEN.forEach(element => {
-            element.style.display = isSpanish ? "none" : "inline-block";
-        });
-    });
-    </script>
+    <script type="module" src="./js/java.js"></script>
+    
 </body>
 </html>
