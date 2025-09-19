@@ -12,131 +12,171 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <a href="index.html"><img src="./imgs/logo.jpg" class="logo" alt="Logo"></a>
+        <a href="index.html"><img src="./imgs/logo.jpg" class="logo" alt="WorkStation Logo"></a>
         <ul class="nav-links">
-            <li class="active"><a href="index.html" id="nav-home">Home</a></li>
+            <li class="active"><a href="#home" id="nav-home">Home</a></li>
             <li><a href="#about" id="nav-about">About Us</a></li>
             <li><a href="#services" id="nav-services">Services</a></li>
-            <li><a href="#how-it-works"><span class="es" style="display:none;">¿Cómo funciona?</span><span class="en" style="color: whitesmoke;">How it works?</span></a></li>
-            <li><a href="#questions" id="nav-faq">FAQ</a></li>
+            <li><a href="#how-it-works" id="nav-how-it-works">How It Works</a></li>
+            <li><a href="#testimonials" id="nav-testimonials">Testimonials</a></li>
+            <li><a href="#faq" id="nav-faq">FAQ</a></li>
             <li><a class="ctn" href="#contact" id="nav-contact">Contact</a></li>
         </ul>
-        <img src="./imgs/logo.jpg" class="menu-btn" alt="Logo">
-
-        <div class="swicth">
+        <img src="./imgs/logo.jpg" class="menu-btn" alt="Menu">
+        <div class="switch">
             <span class="en">English</span>
-            <span class="es" style="color: #1b3a5c;">Spanish</span>
-            <input type="checkbox" class="check"> 
+            <span class="es" style="color: #003087;">Español</span>
+            <input type="checkbox" class="check">
         </div>
     </nav>
 
-    <header>
+    <header id="home">
         <div class="header-content">
-            <h2 id="heart">Caring with Heart</h2>
+            <h1 id="WorkStation-title">Welcome to WorkStation</h1>
             <div class="line"></div>
-            <h1 id="WorkStation-title">CARE WITH WorkStation</h1>
-            <a href="https://WorkStation-7630e.web.app/home" class="ctn" id="explore">Explore More</a>
+            <p id="header-desc">Your premier solution for seamless coworking space reservations.</p>
+            <a href="https://workstation.com/signup" class="ctn" id="get-started">Get Started</a>
         </div>
     </header>
 
     <!-- About -->
     <section id="about" class="about">
         <div class="title">
-            <h2 id="about-title">ABOUT US</h2>
+            <h2 id="about-title">About Us</h2>
             <div class="line"></div>
         </div>
-
         <div class="row">
             <div class="about-col">
-                <h3 id="who">Who are we?</h3>
-                <p id="who-desc">We are WorkStation, and we focus on the emotional and physical well-being of the elderly, providing tools to monitor their health and facilitate communication with their loved ones.</p>
+                <h3 id="who">Who We Are</h3>
+                <p id="who-desc">WorkStation is a SaaS platform connecting freelancers and startups with flexible coworking spaces, simplifying bookings and management.</p>
             </div>
             <div class="about-col">
-                <h3 id="vision">Vision</h3>
-                <p id="vision-desc">WorkStation aspires to be the leading platform in elderly care, fostering deeper connections and offering innovative solutions for holistic well-being.</p>
+                <h3 id="vision">Our Vision</h3>
+                <p id="vision-desc">To lead the coworking industry by providing an intuitive, efficient platform for workspace solutions.</p>
             </div>
             <div class="about-col">
-                <h3 id="mission">Mission</h3>
-                <p id="mission-desc">To empower older adults and their families through advanced digital tools that improve communication, health monitoring, and quality of life.</p>
-            </div>            
+                <h3 id="mission">Our Mission</h3>
+                <p id="mission-desc">To empower professionals with accessible, high-quality coworking options through innovative technology.</p>
+            </div>
         </div>
     </section>
-    
+
     <!-- Services -->
     <section id="services" class="services">
-        <h2 id="services-title">OUR SERVICES</h2>
+        <h2 id="services-title">Our Services</h2>
         <div class="line"></div>
-        
         <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 id="srv-space-management">Space Management</h3>
+                    <p id="srv-space-management-desc">Easily publish and manage coworking spaces with real-time availability.</p>
+                </div>
+            </div>
             <div class="column">
                 <div class="card">
                     <div class="icon">
                         <i class="fa-solid fa-calendar-check"></i>
                     </div>
-                    <h3 id="srv-appointments">Schedule Appointments</h3>
-                    <p id="srv-appointments-desc">We make it easy to schedule medical appointments and recreational activities for residents.</p>
+                    <h3 id="srv-booking">Booking System</h3>
+                    <p id="srv-booking-desc">Streamlined reservations with instant confirmation for freelancers.</p>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <div class="icon">
-                        <i class="fa-solid fa-chart-bar"></i>
+                        <i class="fa-solid fa-credit-card"></i>
                     </div>
-                    <h3 id="srv-stats">Statistics</h3>
-                    <p id="srv-stats-desc">We provide detailed statistics on the health and well-being of the residents.</p>
+                    <h3 id="srv-payments">Payment Processing</h3>
+                    <p id="srv-payments-desc">Secure and flexible payment options for all transactions.</p>
                 </div>
             </div>
             <div class="column">
                 <div class="card">
                     <div class="icon">
-                        <i class="fa-regular fa-address-book"></i>
+                        <i class="fa-solid fa-user"></i>
                     </div>
-                    <h3 id="srv-reports">Reports</h3>
-                    <p id="srv-reports-desc">We generate periodic reports on the health and well-being of the residents.</p>
+                    <h3 id="srv-profiles">Profile Management</h3>
+                    <p id="srv-profiles-desc">Customize your profile and preferences with ease.</p>
                 </div>
             </div>
-            <div class="column">
-                <div class="card">
-                    <div class="icon">
-                        <i class="fa-regular fa-envelope"></i>
-                    </div>
-                    <h3 id="srv-messages">Messaging</h3>
-                    <p id="srv-messages-desc">We facilitate communication between residents and their families through our platform.</p>
-                </div>
-            </div>
-        </div> 
+        </div>
     </section>
 
-    <!-- Questions -->
-    <section id="questions" class="accordion_section">
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
         <div class="title">
-            <h2 id="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
+            <h2 id="how-title">How It Works</h2>
             <div class="line"></div>
         </div>
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-icon"><i class="fa-solid fa-sign-in-alt"></i></div>
+                <h3 id="step-1">Sign Up</h3>
+                <p id="step-1-desc">Create an account as a freelancer or property owner.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon"><i class="fa-solid fa-search"></i></div>
+                <h3 id="step-2">Find a Space</h3>
+                <p id="step-2-desc">Browse and filter available coworking spaces.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <h3 id="step-3">Book & Pay</h3>
+                <p id="step-3-desc">Select your date, confirm, and process payment securely.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="title">
+            <h2 id="testimonials-title">What Our Users Say</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="testimonial-col">
+                <p id="testimonial-1">"WorkStation made finding a workspace a breeze. Highly recommend!"</p>
+                <h3 id="testimonial-1-author">- Jane Doe, Freelancer</h3>
+            </div>
+            <div class="testimonial-col">
+                <p id="testimonial-2">"Managing my coworking space has never been easier with this platform."</p>
+                <h3 id="testimonial-2-author">- John Smith, Property Owner</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="accordion_section">
+        <div class="title">
+            <h2 id="faq-title">Frequently Asked Questions</h2>
+            <div class="line"></div>
+        </div>
         <div class="wrapper">
             <div class="grid">
                 <div class="col">
-                    <img src="./imgs/logo.jpg" alt="WorkStation Logo">
+                    <img src="./imgs/concepto-faq_23-2148162317.jpg" alt="WorkStation Workspace">
                 </div>
                 <div class="col">
                     <div class="accordion">
                         <div class="accordion-item">
                             <button class="accordion-header" id="faq-q1">What is WorkStation?</button>
                             <div class="accordion-content">
-                                <p id="faq-q1-desc">It is a digital platform to monitor the health and well-being of elderly people in nursing homes, facilitating connection with their families.</p>
+                                <p id="faq-q1-desc">WorkStation is a platform for booking and managing coworking spaces efficiently.</p>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <button class="accordion-header" id="faq-q2">How do I access my relative’s reports?</button>
+                            <button class="accordion-header" id="faq-q2">How do I book a space?</button>
                             <div class="accordion-content">
-                                <p id="faq-q2-desc">By logging into your account on our web platform or mobile app, you can access all reports in real-time.</p>
+                                <p id="faq-q2-desc">Sign up, search for a space, select a date, and complete payment online.</p>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <button class="accordion-header" id="faq-q3">Is information in WorkStation secure?</button>
+                            <button class="accordion-header" id="faq-q3">Is my data secure?</button>
                             <div class="accordion-content">
-                                <p id="faq-q3-desc">Yes, we use security protocols and encryption to protect all personal and medical data of the residents.</p>
+                                <p id="faq-q3-desc">Yes, we use advanced encryption to protect your information.</p>
                             </div>
                         </div>
                     </div>
@@ -148,29 +188,27 @@
     <!-- Contact -->
     <section id="contact" class="contact">
         <div class="content">
-            <h2 id="contact-title">CONTACT US</h2>
+            <h2 id="contact-title">Contact Us</h2>
             <div class="line"></div>
-            <p id="contact-desc">We are here for you! At WorkStation, we value connection and support. If you have questions, need help, or simply want to learn more about our services, don't hesitate to contact us.</p>
+            <p id="contact-desc">We are here to assist. Reach out for support or inquiries about WorkStation.</p>
         </div>
-
         <div class="container">
             <div class="contactInfo">
                 <div class="box">
-                    <div class="icon"> <i class="fa-solid fa-envelope"></i> </div>
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
                     <div class="text">
                         <h3 id="contact-email-label">Email</h3>
-                        <p>WorkStation@gmail.com</p>
+                        <p>support@workstation.com</p>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="icon"> <i class="fa-solid fa-phone"></i> </div>
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
                     <div class="text">
                         <h3 id="contact-phone-label">Phone</h3>
                         <p>+51 970 526 672</p>
                     </div>
                 </div>
             </div>
-
             <div class="contactForm">
                 <form action="">
                     <h2 id="form-title">Send Message</h2>
@@ -184,7 +222,7 @@
                     </div>
                     <div class="inputBox">
                         <textarea name="" required="required"></textarea>
-                        <span id="form-msg">Write your message...</span>
+                        <span id="form-msg">Your Message</span>
                     </div>
                     <div class="inputBox">
                         <input type="submit" name="" value="Send" id="form-send">
@@ -194,15 +232,14 @@
         </div>
     </section>
 
-    <footer style="background-color: #1c1c1c; color: white; padding: 22px 10px; text-align: center;">
+    <footer>
         <div class="footer-content">
-            <p id="footer-desc">Empowering elderly care through technology and real-time family connections.</p>
-            <p id="footer-contact">Email: WorkStation@gmail.com | Phone: +51 970 526 672</p>
+            <p id="footer-desc">Enhancing coworking experiences through innovative technology.</p>
+            <p id="footer-contact">Email: support@workstation.com | Phone: +51 970 526 672</p>
             <p>&copy; 2025 WorkStation. All rights reserved.</p>
         </div>
     </footer>
 
     <script type="module" src="./js/java.js"></script>
-    
 </body>
 </html>
