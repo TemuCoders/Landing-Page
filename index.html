@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - WorkStation</title>
+    <meta name="author" content="TemuCoders">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html"><img src="./imgs/logo.jpg" class="logo" alt="WorkStation Logo"></a>
+        <ul class="nav-links">
+            <li class="active"><a href="#home" id="nav-home">Home</a></li>
+            <li><a href="#about" id="nav-about">About Us</a></li>
+            <li><a href="#services" id="nav-services">Services</a></li>
+            <li><a href="#how-it-works" id="nav-how-it-works">How It Works</a></li>
+            <li><a href="#faq" id="nav-faq">FAQ</a></li>
+            <li><a href="#team" id="nav-team">Our Team</a></li>
+            <li><a class="ctn" href="#contact" id="nav-contact">Contact</a></li>
+        </ul>
+        <img src="./imgs/logo.jpg" class="menu-btn" alt="Menu">
+        <div class="switch">
+            <span class="en">English</span>
+            <span class="es" style="color: #003087;">Español</span>
+            <input type="checkbox" class="check">
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="header-content">
+            <h1 id="WorkStation-title">Welcome to WorkStation</h1>
+            <div class="line"></div>
+            <p id="header-desc">Your premier solution for seamless coworking space reservations.</p>
+            <a href="https://workstation.com/signup" class="ctn" id="get-started">Get Started</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="title">
+            <h2 id="about-title">About Us</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="about-col">
+                <h3 id="who">Who We Are</h3>
+                <p id="who-desc">WorkStation is a SaaS platform connecting freelancers and startups with flexible coworking spaces, simplifying bookings and management.</p>
+            </div>
+            <div class="about-col">
+                <h3 id="vision">Our Vision</h3>
+                <p id="vision-desc">To lead the coworking industry by providing an intuitive, efficient platform for workspace solutions.</p>
+            </div>
+            <div class="about-col">
+                <h3 id="mission">Our Mission</h3>
+                <p id="mission-desc">To empower professionals with accessible, high-quality coworking options through innovative technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2 id="services-title">Our Services</h2>
+        <div class="line"></div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 id="srv-space-management">Space Management</h3>
+                    <p id="srv-space-management-desc">Easily publish and manage coworking spaces with real-time availability.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3 id="srv-booking">Booking System</h3>
+                    <p id="srv-booking-desc">Streamlined reservations with instant confirmation for freelancers.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <h3 id="srv-payments">Payment Processing</h3>
+                    <p id="srv-payments-desc">Secure and flexible payment options for all transactions.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h3 id="srv-profiles">Profile Management</h3>
+                    <p id="srv-profiles-desc">Customize your profile and preferences with ease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="title">
+            <h2 id="how-title">How It Works</h2>
+            <div class="line"></div>
+        </div>
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-icon"><i class="fa-solid fa-sign-in-alt"></i></div>
+                <h3 id="step-1">Sign Up</h3>
+                <p id="step-1-desc">Create an account as a freelancer or property owner.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon"><i class="fa-solid fa-search"></i></div>
+                <h3 id="step-2">Find a Space</h3>
+                <p id="step-2-desc">Browse and filter available coworking spaces.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <h3 id="step-3">Book & Pay</h3>
+                <p id="step-3-desc">Select your date, confirm, and process payment securely.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sections -->
+    <section id="sections" class="sections">
+        <div class="title">
+            <h2>Services</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="slider-box">
+            <ul>
+                <li>
+                    <img src="./imgs/Dashboard.png" alt="">
+                    <div class="texto">
+                        <h2>Pagina Principal</h2>
+                        <p>Vista donde se encuentra todo lo que se necesita para gestionar el espacio.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./imgs/Busqueda de Espacios.png" alt="">
+                    <div class="texto">
+                        <h2>Busqueda de Espacios</h2>
+                        <p>Vista donde se encuentra todo lo que se necesita para buscar un espacio.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./imgs/concepto-faq_23-2148162317.jpg" alt="">
+                    <div class="texto">
+                        <h2>Imagen 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, doloremque.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="./imgs/concepto-faq_23-2148162317.jpg" alt="">
+                    <div class="texto">
+                        <h2>Imagen 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, doloremque.</p>
+                    </div>
+                </li>
+                
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="accordion_section">
+        <div class="title">
+            <h2 id="faq-title">Frequently Asked Questions</h2>
+            <div class="line"></div>
+        </div>
+        <div class="wrapper">
+            <div class="grid">
+                <div class="col">
+                    <img src="./imgs/concepto-faq_23-2148162317.jpg" alt="WorkStation Workspace">
+                </div>
+                <div class="col">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header" id="faq-q1">What is WorkStation?</button>
+                            <div class="accordion-content">
+                                <p id="faq-q1-desc">WorkStation is a platform for booking and managing coworking spaces efficiently.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header" id="faq-q2">How do I book a space?</button>
+                            <div class="accordion-content">
+                                <p id="faq-q2-desc">Sign up, search for a space, select a date, and complete payment online.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header" id="faq-q3">Is my data secure?</button>
+                            <div class="accordion-content">
+                                <p id="faq-q3-desc">Yes, we use advanced encryption to protect your information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="team">
+
+        <div class="title">
+            <h2>Our Team Section</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="card_Container">
+
+            <div class="card">
+                <div class="imbBx">
+                    <img src="./imgs/arturo.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Arturo Saravia <br><span>Web Analyst</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 1">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="imbBx">
+                    <img src="./imgs/ivan.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Ivan La Madrid <br><span>UI/UX Designer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 1">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./imgs/Franco.jpeg" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Franco Huang <br><span>Front-End Web Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 1">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="imbBx">
+                    <img src="./imgs/perfil-integrante-jeremy.png" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="contentBx">
+                        <h3>Jeremy Quijada <br><span>Back-End Web Developer</span></h3>
+                    </div>
+                    <ul class="sci">
+                        <li style="--i: 1">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li style="--i: 2">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li style="--i: 3">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="content">
+            <h2 id="contact-title">Contact Us</h2>
+            <div class="line"></div>
+            <p id="contact-desc">We are here to assist. Reach out for support or inquiries about WorkStation.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3 id="contact-email-label">Email</h3>
+                        <p>support@workstation.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3 id="contact-phone-label">Phone</h3>
+                        <p>+51 970 526 672</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <h2 id="form-title">Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span id="form-name">Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span id="form-email">Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="" required="required"></textarea>
+                        <span id="form-msg">Your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send" id="form-send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p id="footer-desc">Enhancing coworking experiences through innovative technology.</p>
+            <p id="footer-contact">Email: support@workstation.com | Phone: +51 970 526 672</p>
+            <p>&copy; 2025 WorkStation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/java.js"></script>
+</body>
+</html>
