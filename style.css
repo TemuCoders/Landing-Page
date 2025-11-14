@@ -1,4 +1,4 @@
-* {
+*  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,97 +13,161 @@ ul {
     list-style: none;
 }
 
-.active {
-    color: #4A90E2;
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
-/* Navbar */
+.active {
+    color: #4A90E2;
+    font-weight: 600;
+}
+
+/* ==================== NAVBAR ==================== */
 .logo {
     width: 50px;
     height: 50px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 6%;
-    background: #003087;
+    padding: 1.5% 6%;
+    background: rgba(0, 48, 135, 0.95);
+    backdrop-filter: blur(10px);
     color: #F5F7FA;
     font-size: 2.5vmin;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    padding: 1% 6%;
+    background: rgba(0, 48, 135, 1);
 }
 
 .nav-links {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .nav-links li {
-    margin: 0 30px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-links li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #4A90E2;
+    transition: width 0.3s ease;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+}
+
+.nav-links li a {
+    transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
     color: #4A90E2;
 }
 
+/* ==================== HEADER ==================== */
 header {
     width: 100vw;
-    height: 50vw;
-    background: linear-gradient(rgba(54, 68, 96, 0.7)), url(./imgs/fondo-menu.jpg);
-    background-position: bottom;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 48, 135, 0.75), rgba(74, 144, 226, 0.5)), 
+                url(./imgs/fondo-menu.jpg);
+    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .header-content {
     text-align: center;
     color: #F5F7FA;
+    animation: fadeInUp 1s ease;
 }
 
 .header-content h1 {
     font-size: 7vmin;
     margin: 20px 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .header-content p {
     font-size: 2.5vmin;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
 }
 
 .line {
     width: 100px;
     height: 4px;
-    background: #003087;
+    background: #4A90E2;
     margin: 10px auto;
     border-radius: 5px;
 }
 
+header .line {
+    background: #F5F7FA;
+}
+
 .ctn {
-    padding: 8px 15px;
+    padding: 12px 30px;
     background: #4A90E2;
     border-radius: 30px;
     color: #F5F7FA;
     font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
 }
 
 .ctn:hover {
-    background: #ffffff;
-    transition: all 0.3s ease;
+    background: #F5F7FA;
+    color: #003087;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.6);
 }
 
 .menu-btn {
     display: none;
     width: 40px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-/* Switch */
+.menu-btn:hover {
+    transform: rotate(90deg);
+}
+
+/* ==================== SWITCH ==================== */
 .switch {
     display: flex;
     align-items: center;
@@ -111,25 +175,30 @@ header {
     height: 50px;
     width: 150px;
     background: #F5F7FA;
-    border-radius: 20px;
+    border-radius: 25px;
     gap: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .es {
-    color: #7bd8eb;
+    color: #4A90E2;
+    transition: color 0.3s ease;
 }
 
 .en {
-    color: #1b3a5c;
+    color: #003087;
+    transition: color 0.3s ease;
 }
 
 .en, .es {
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .check {
     position: relative;
     width: 40px;
+    cursor: pointer;
 }
 
 .check::before {
@@ -139,6 +208,7 @@ header {
     height: 20px;
     background: #003087;
     border-radius: 25px;
+    transition: 0.3s ease;
 }
 
 .check::after {
@@ -148,9 +218,10 @@ header {
     height: 20px;
     background: #F5F7FA;
     border-radius: 50%;
-    transition: 0.5s;
+    transition: 0.3s ease;
     border: 2px solid #fff;
     box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .check:checked::after {
@@ -162,23 +233,28 @@ header {
     background: #4A90E2;
 }
 
-/* About */
+/* ==================== ABOUT ==================== */
 .about {
     width: 80%;
-    margin: 50px auto;
+    margin: 80px auto;
     text-align: center;
 }
 
 .about .title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.about .title h2 {
     color: #003087;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 .about p {
     color: #4b4b4b;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
     padding: 10px;
 }
 
@@ -186,161 +262,209 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .about-col {
     flex: 1;
-    min-width: 300px;
+    min-width: 280px;
     background: #F5F7FA;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    transition: all 0.3s ease;
+    border-radius: 15px;
+    padding: 35px 25px;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .about-col:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 48, 135, 0.15);
+    background: linear-gradient(135deg, #F5F7FA 0%, #ffffff 100%);
 }
 
-/* Services */
+.about-col h3 {
+    color: #003087;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* ==================== SERVICES ==================== */
 .services {
     width: 80%;
-    margin: 50px auto;
+    margin: 80px auto;
     text-align: center;
     padding: 50px 0;
 }
 
 .services h2 {
     color: #003087;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 .column {
     flex: 1;
-    min-width: 250px;
+    min-width: 200px;
     padding: 1em;
 }
 
 .card {
-    padding: 1.5em;
+    padding: 2em;
     background: linear-gradient(#F5F7FA 50%, #4A90E2 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease;
-    height: 300px; 
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .card h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #003087;
-    margin: 0.5em 0;
+    margin: 1em 0 0.5em;
+    transition: color 0.3s ease;
 }
 
 .card p {
     font-size: 1rem;
     color: #4b4b4b;
-    line-height: 1.4;
+    line-height: 1.6;
     flex-grow: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    transition: color 0.3s ease;
 }
 
 .card .icon {
     background: #4A90E2;
-    margin: 0 auto 1em;
-    font-size: 2rem;
-    height: 2.5em;
-    width: 2.5em;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    height: 3em;
+    width: 3em;
     color: #F5F7FA;
     border-radius: 50%;
     display: grid;
     place-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
 }
 
 .card:hover {
     background-position: 0 100%;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 48, 135, 0.2);
 }
 
 .card:hover .icon {
     background: #F5F7FA;
     color: #4A90E2;
+    transform: scale(1.1);
 }
 
-.card:hover h3, .card:hover p {
+.card:hover h3,
+.card:hover p {
     color: #F5F7FA;
 }
 
-/* How It Works */
+/* ==================== HOW IT WORKS ==================== */
 .how-it-works {
     width: 80%;
-    margin: auto;
+    margin: 80px auto;
     text-align: center;
     padding: 50px 0;
 }
 
-.how-it-works .title {
-    text-align: center;
-    margin-bottom: 30px;
+.how-it-works .title h2 {
     color: #003087;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 .steps-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .step-card {
     flex: 1;
-    min-width: 250px;
+    min-width: 280px;
+    max-width: 350px;
     background: #F5F7FA;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease;
+    border-radius: 15px;
+    padding: 35px 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.step-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(74, 144, 226, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.step-card:hover::before {
+    left: 100%;
 }
 
 .step-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 48, 135, 0.2);
     background: #4A90E2;
 }
 
-.step-card:hover h3, .step-card:hover p {
+.step-card:hover h3,
+.step-card:hover p {
     color: #F5F7FA;
 }
 
 .step-icon {
     background: #4A90E2;
-    margin-bottom: 1em;
-    font-size: 2rem;
-    height: 2.5em;
-    width: 2.5em;
+    margin: 0 auto 1.5em;
+    font-size: 2.5rem;
+    height: 3em;
+    width: 3em;
     color: #F5F7FA;
     border-radius: 50%;
     display: grid;
     place-items: center;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+    transition: all 0.3s ease;
+}
+
+.step-card:hover .step-icon {
+    background: #F5F7FA;
+    color: #4A90E2;
+    transform: scale(1.1) rotate(360deg);
 }
 
 .step-card h3 {
     color: #003087;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .step-card p {
     color: #4b4b4b;
     font-size: 1rem;
+    line-height: 1.6;
+    transition: color 0.3s ease;
 }
+
 
 /* Sections */
 .sections {
@@ -420,7 +544,126 @@ header {
     }
 }
 
+/* ==================== VIDEO SECTIONS ==================== */
+.video-sections {
+    width: 100%;
+    padding: 80px 20px;
+    background: #f5f7fa;
+}
 
+.video-section-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.video-section {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 40px rgba(0, 48, 135, 0.12);
+    transition: all 0.4s ease;
+}
+
+.video-section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 50px rgba(0, 48, 135, 0.2);
+}
+
+.video-content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 0;
+}
+
+/* Alternar orden en la segunda sección */
+.video-section:nth-child(2) .video-content-grid {
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.video-section:nth-child(2) .video-container {
+    order: 2;
+}
+
+.video-section:nth-child(2) .video-text-content {
+    order: 1;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    background: #003087;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text Content */
+.video-text-content {
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    position: relative;
+}
+
+.video-text-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 120px;
+    background: linear-gradient(180deg, #003087 0%, #4A90E2 100%);
+    border-radius: 0 3px 3px 0;
+}
+
+.video-section:nth-child(2) .video-text-content::before {
+    left: auto;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.video-text-content h2 {
+    font-size: 2.5rem;
+    color: #003087;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.video-text-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #003087 0%, #4A90E2 100%);
+    border-radius: 2px;
+}
+
+.video-text-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4b4b4b;
+    text-align: justify;
+}
 
 /* FAQ */
 .accordion_section {
