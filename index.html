@@ -15,7 +15,7 @@
         <a href="index.html"><img src="./imgs/logo.jpg" class="logo" alt="WorkStation Logo"></a>
         <ul class="nav-links">
             <li class="active"><a href="#home" id="nav-home">Home</a></li>
-            <li><a href="#about" id="nav-about">About Us</a></li>
+            <li><a href="#about-us" id="nav-about-us">About Us</a></li>
             <li><a href="#services" id="nav-services">Services</a></li>
             <li><a href="#how-it-works" id="nav-how-it-works">How It Works</a></li>
             <li><a href="#faq" id="nav-faq">FAQ</a></li>
@@ -30,6 +30,7 @@
         </div>
     </nav>
 
+    <!-- Header -->
     <header id="home">
         <div class="header-content">
             <h1 id="WorkStation-title">Welcome to WorkStation</h1>
@@ -40,7 +41,7 @@
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="about-us" class="about">
         <div class="title">
             <h2 id="about-title">About Us</h2>
             <div class="line"></div>
@@ -130,48 +131,95 @@
         </div>
     </section>
 
-    <!-- Sections -->
+    <!-- Sections (Slider) -->
     <section id="sections" class="sections">
         <div class="title">
-            <h2>Services</h2>
+            <h2 id="sections-title">Services</h2>
             <div class="line"></div>
         </div>
 
         <div class="slider-box">
             <ul>
                 <li>
-                    <img src="./imgs/Dashboard.png" alt="">
+                    <img src="./imgs/Dashboard.png" alt="Dashboard">
                     <div class="texto">
-                        <h2>Pagina Principal</h2>
-                        <p>Vista donde se encuentra todo lo que se necesita para gestionar el espacio.</p>
+                        <h2 id="section-1-title">Main Page</h2>
+                        <p id="section-1-desc">View where everything you need to manage the space is located.</p>
                     </div>
                 </li>
 
                 <li>
-                    <img src="./imgs/Busqueda de Espacios.png" alt="">
+                    <img src="./imgs/Busqueda de Espacios.png" alt="Space Search">
                     <div class="texto">
-                        <h2>Busqueda de Espacios</h2>
-                        <p>Vista donde se encuentra todo lo que se necesita para buscar un espacio.</p>
+                        <h2 id="section-2-title">Space Search</h2>
+                        <p id="section-2-desc">View where everything you need to search for a space is located.</p>
                     </div>
                 </li>
 
                 <li>
-                    <img src="./imgs/concepto-faq_23-2148162317.jpg" alt="">
+                    <img src="./imgs/reviews.jpg" alt="Reviews">
                     <div class="texto">
-                        <h2>Imagen 1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, doloremque.</p>
+                        <h2 id="section-3-title">Reviews</h2>
+                        <p id="section-3-desc">Reviews and ratings that other users leave about coworking spaces are shown, helping to build trust and guide future booking decisions.</p>
                     </div>
                 </li>
 
                 <li>
-                    <img src="./imgs/concepto-faq_23-2148162317.jpg" alt="">
+                    <img src="./imgs/concepto-faq_23-2148162317.jpg" alt="Profile">
                     <div class="texto">
-                        <h2>Imagen 1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, doloremque.</p>
+                        <h2 id="section-4-title">Profile</h2>
+                        <p id="section-4-desc">The user can view and edit their personal information, preferences and payment methods, as well as consult their booking history to easily manage their experience on the platform.</p>
                     </div>
                 </li>
-                
             </ul>
+        </div>
+    </section>
+
+    <!-- Video Sections -->
+    <section class="video-sections">
+        <div class="video-section-wrapper">
+            
+            <!-- Primera Sección: About the Team -->
+            <div class="video-section">
+                <div class="video-content-grid">
+                    <div class="video-container">
+                        <video controls loop>
+                            <source src="./videos/Abouth-the-Team.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-text-content">
+                        <h2 id="video-section-1-title">About the Team</h2>
+                        <p id="video-section-1-desc">
+                            At WorkStation, our team is made up of passionate professionals who believe in transforming 
+                            the way people connect with coworking spaces. From developers and designers to customer 
+                            support specialists, each member contributes their expertise to create a seamless platform 
+                            that empowers freelancers and startups. Together, we combine innovation and dedication to 
+                            simplify workspace discovery, booking, and management for our community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda Sección: About the Product -->
+            <div class="video-section">
+                <div class="video-content-grid">
+                    <div class="video-container">
+                        <video controls loop>
+                            <source src="./videos/Abouth-the-Team.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-text-content">
+                        <h2 id="video-section-2-title">About the Product</h2>
+                        <p id="video-section-2-desc">
+                            We've built a cutting-edge SaaS platform that transforms how coworking spaces are 
+                            discovered, booked, and managed. Our intelligent system provides real-time insights, 
+                            automated scheduling, and seamless integration with multiple payment gateways.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -215,17 +263,15 @@
 
     <!-- Team -->
     <section id="team" class="team">
-
         <div class="title">
-            <h2>Our Team Section</h2>
+            <h2 id="team-title">Our Team Section</h2>
             <div class="line"></div>
         </div>
 
         <div class="card_Container">
-
             <div class="card">
                 <div class="imbBx">
-                    <img src="./imgs/arturo.jpg" alt="">
+                    <img src="./imgs/arturo.jpg" alt="Arturo Saravia">
                 </div>
                 <div class="content">
                     <div class="contentBx">
@@ -243,12 +289,11 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
 
             <div class="card">
                 <div class="imbBx">
-                    <img src="./imgs/ivan.jpg" alt="">
+                    <img src="./imgs/ivan.jpg" alt="Ivan La Madrid">
                 </div>
                 <div class="content">
                     <div class="contentBx">
@@ -266,15 +311,12 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
 
             <div class="card">
-
                 <div class="imbBx">
-                    <img src="./imgs/Franco.jpeg" alt="">
+                    <img src="./imgs/Franco.jpeg" alt="Franco Huang">
                 </div>
-
                 <div class="content">
                     <div class="contentBx">
                         <h3>Franco Huang <br><span>Front-End Web Developer</span></h3>
@@ -291,15 +333,12 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
 
             <div class="card">
-
                 <div class="imbBx">
-                    <img src="./imgs/perfil-integrante-jeremy.png" alt="">
+                    <img src="./imgs/perfil-integrante-jeremy.png" alt="Jeremy Quijada">
                 </div>
-
                 <div class="content">
                     <div class="contentBx">
                         <h3>Jeremy Quijada <br><span>Back-End Web Developer</span></h3>
@@ -316,12 +355,9 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
-
     </section>
-
 
     <!-- Contact -->
     <section id="contact" class="contact">
@@ -370,6 +406,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p id="footer-desc">Enhancing coworking experiences through innovative technology.</p>
